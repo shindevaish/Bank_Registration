@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bank Acount Opening Form</title>
+    <style>
+        .center{
+            text-align: center;
+            padding: 10px;
+        }
+        body {
+            text-align: center;
+            background-color: #ABB2B9   ;
+        }
+        h1, h2 {
+            text-align: left;
+        }
+        table {
+            margin: 0 auto;
+        }
+        form {
+            margin: 0 auto;
+            text-align: left;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            font-size: 15px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">WELCOME TO ABC BANK OF INDIA</h1>
+
+    <h2 class="center">Customer Registration Form</h2>
+    <form class="center" action="registration.php" method="post">
+        <label for="full_name" style="font-size: 20px;" ><b>Full Name:</b></label>
+        <input type="text" id="full_name" name="full_name"required><br><br>
+        <label for="dob" style="font-size: 20px;" ><b>Date of Birth:</b></label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label style="font-size: 20px;" ><b>Gender:</b></label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male" style="font-size: 20px;" ><b>Male</b></label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female" style="font-size: 20px;" ><b>Female</b></label><br><br>
+
+        <label for="address" style="font-size: 20px;" ><b>Address:</b></label>
+        <input type="address" id="address" rows=2 required><br><br>
+        <label for="pincode" style="font-size: 20px;" ><b>Pincode:</b></label>
+        <input type="pincode" id="pincode" name="pincode"><br><br>
+        <label for="email" style="font-size: 20px;" ><b>Email Id:</b></label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="number" style="font-size: 20px;" ><b>Contact No.:</b></label>
+        <input type="number" id="number" name="number" required><br><br>
+        <label for="adhar_no" style="font-size: 20px;"><b>Aadhar number:</b></label>
+        <input type="number" id="adhar_no" name="number" required><br><br>
+
+        <label for="account_type" style="font-size: 20px;"><b>Account Type:</b></label>
+        <select id="account_type" name="account_type"required>
+            <option value="">Select account type</option>
+            <option value="Saving">Saving</option>
+            <option value="Checking">Checking</option>
+            <option value="Fixed Deposit">Fixed Deposit</option>
+        </select><br><br>
+
+        <label for="initial_deposit" style="font-size: 20px;"><b>Initial Depositing Amount:</b></label>
+        <input type="number" id="initial_deposit" name="initial_deposit" required><br><br>
+
+        <input type="submit" value="Submit Details">
+    </form>
+
+    <hr>
+
+    <h2 style="text-align: center; padding: 25px;">Registered Customer Details</h2>
+    <table border="1" style="padding-bottom: 30px;background-color: #99A3A4;">
+        <thead style="font-size: 25px;">
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Contact No.</th>
+                <th>Aadhar No.</th>
+                <th>Account Type</th>
+                <th>Initial Amount</th>
+            </tr>
+        </thead>
+        <tbody style="font-size: 20px;">
+            <tr>
+                <td>Vaishnavi Shinde</td>
+                <td>2005-08-23</td>
+                <td>Female</td>
+                <td>Gittikhadan,Nagpur</td>
+                <td>387384</td>
+                <td>7456873746</td>
+                <td>4567 5838 4847</td>
+                <td>Savings</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+        <tbody style="font-size: 20px;">
+            <tr>
+                <td>Shubham Shinde</td>
+                <td>1997-12-05</td>
+                <td>Male</td>
+                <td>Jp Nagar,Banglore</td>
+                <td>397497</td>
+                <td>6556373743</td>
+                <td>6765 5737 3836</td>
+                <td>Savings</td>
+                <td>10000</td>
+            </tr>
+        </tbody>
+        <tbody style="font-size: 20px;">
+            <tr>
+                <td>Akshata Deshpande</td>
+                <td>2004-04-06</td>
+                <td>Female</td>
+                <td>Mathura</td>
+                <td>221001</td>
+                <td>7456873746</td>
+                <td>4567 5838 4847</td>
+                <td>Savings</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+        <tbody style="font-size: 20px;">
+            <tr>
+                <td>Harshad Shinde</td>
+                <td>1999-08-09</td>
+                <td>Male</td>
+                <td>Ausanganj,Varanasi</td>
+                <td>568485</td>
+                <td>7849375746</td>
+                <td>8475 5838 9375</td>
+                <td>Savings</td>
+                <td>14000</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr><hr><hr>
+</body>
+</html>
